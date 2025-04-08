@@ -2,33 +2,33 @@
 
 Backend Setup
 
-Step into backend
+Step into backend:
 cd backend
 
-Create virtual environment
+Create virtual environment:
 python -m venv env
 
-Activate env (Windows)
+Activate env (Windows):
 .\env\Scripts\activate
 
-Install dependencies
+Install dependencies:
 pip install -r requirements.txt
 
 Create config file for API key
 echo OPENCAGE_API_KEY = "put your api here" > app/config.py
 
-Start backend server
+Start backend server:
 uvicorn app.main:app --reload --port 8000
 
 Frontend Setup
 
-Step into frontend
+Step into frontend:
 cd frontend
 
-Install dependencies
+Install dependencies:
 npm install
 
-Start React app
+Start React app:
 npm start
 
 Generate Dataset
@@ -52,3 +52,8 @@ Uses OneHotEncoder + XGBoost
 Performs Optuna tuning for best results
 
 Saves model and encoder for backend use
+
+Lottie animations used in this project are sourced from public libraries.
+
+Credits go to their respective creators and owners.
+
