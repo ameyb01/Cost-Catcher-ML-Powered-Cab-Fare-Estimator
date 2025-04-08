@@ -1,2 +1,2 @@
 # app/config.py
-OPENCAGE_API_KEY = "ca5a46f0250e4d2caeb6f10362348866"
+OPENCAGE_API_KEY = "put_your_api_key_here"
