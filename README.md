@@ -2,36 +2,36 @@
 
 Backend Setup
 
-# Step into backend
+Step into backend
 cd backend
 
-# Create virtual environment
+Create virtual environment
 python -m venv env
 
-# Activate env (Windows)
+Activate env (Windows)
 .\env\Scripts\activate
 
-# Install dependencies
+Install dependencies
 pip install -r requirements.txt
 
-# Create config file for API key
+Create config file for API key
 echo OPENCAGE_API_KEY = "put your api here" > app/config.py
 
-# Start backend server
+Start backend server
 uvicorn app.main:app --reload --port 8000
 
 Frontend Setup
 
-# Step into frontend
+Step into frontend
 cd frontend
 
-# Install dependencies
+Install dependencies
 npm install
 
-# Start React app
+Start React app
 npm start
 
-# Generate Dataset
+Generate Dataset
 Synthetic ride pricing data is generated using generate_dataset.py. It creates realistic fare estimates based on:
 
 Distance, Time of Day, Day of Week
@@ -42,7 +42,7 @@ Provider (Kuber, Dryft) :)
 
 Peak hours, Surge levels, Trip type
 
-# Train ML Model
+Train ML Model
 The train_model.py script:
 
 Loads and preprocesses the dataset
