@@ -2,7 +2,10 @@
 env/
 venv/
 
-# Byte-compiled files
+# Node.js dependencies
+node_modules/
+
+# Byte-compiled Python files
 __pycache__/
 *.py[cod]
 
