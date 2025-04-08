@@ -1,0 +1,185 @@
+/* === Base Container Styling === */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* === Styling for the Main Tab Content Area === */
+.tab-content {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* === Address Input Form Section === */
+.address-inputs {
+  margin-bottom: 20px;
+}
+
+.address-inputs div {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.address-inputs label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.address-inputs input,
+.address-inputs select {
+  padding: 8px;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* === Info Note Below Address Form === */
+.note {
+  color: #555;
+  font-size: 14px;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* === Cab Animation Display === */
+.cab-animation {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* === Ride Category Card Styling === */
+.category {
+  padding: 20px;
+  margin: 10px auto;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  overflow: visible;
+}
+
+/* === Provider Box Styling === */
+.provider {
+  font-size: 18px;
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.provider img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+/* === Animation for Cheapest Provider Logo === */
+.cheapest-logo {
+  animation: flash 1.5s infinite;
+}
+
+/* === Cheapest Price Label === */
+.cheapest {
+  color: green;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* === Price Savings Text === */
+.savings {
+  color: red;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* === Error Box Styling === */
+.error {
+  color: red;
+  font-size: 18px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 5px;
+  background: #ffe6e6;
+}
+
+/* === Price Breakdown Box === */
+.breakdown {
+  margin-top: 10px;
+  background-color: #f1f1f1;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.breakdown div {
+  margin: 4px 0;
+}
+
+/* === Toggle Button for Showing/ Hiding Breakdown === */
+.breakdown-toggle {
+  margin-top: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+  background: none;
+  border: none;
+}
+
+.breakdown-toggle:hover {
+  color: #0056b3;
+}
+
+/* === Leaflet Map Container === */
+.leaflet-container {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+  z-index: 0;
+}
+
+/* === Map Wrapper Border + Radius === */
+.map-wrapper {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* === Last Updated Time Text === */
+.last-updated {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* === Flash Animation for Cheapest Provider === */
+@keyframes flash {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 15px rgba(0, 255, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+  }
+}
