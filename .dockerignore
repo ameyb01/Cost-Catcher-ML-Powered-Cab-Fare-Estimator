@@ -1,0 +1,21 @@
+# venvs
+**/env
+**/venv
+
+# node
+**/node_modules
+**/.cache
+frontend/**/.vercel
+
+# python bytecode
+**/__pycache__
+**/*.py[cod]
+
+# OS/editor
+**/.DS_Store
+**/.vscode
+**/.idea
+
+# keep ML artifacts (VERY IMPORTANT)
+!backend/app/services/realistic_price_model_mega.pkl
+!backend/app/services/realistic_encoder_mega.pkl
